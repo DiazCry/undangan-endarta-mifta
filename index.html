@@ -4,8 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0f6b52">
-<title>Mifta & Endarta — Pernikahan Kami</title>
+<title>The Wedding Of Mifta & Endarta</title>
 <meta name="description" content="Undangan Pernikahan Miftachul Nurrosidah & Endarta Prayoga — 11 November 2026">
+
+<!-- ======================================================== -->
+<!-- Meta Tag Open Graph (Untuk WhatsApp, Facebook, Telegram) -->
+<!-- ======================================================== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://endartaprayoga.github.io/undangan-endarta-mifta/">
+<meta property="og:title" content="The Wedding Of Mifta & Endarta">
+<meta property="og:description" content="Kami mengundang Anda untuk hadir dan memberikan doa restu pada pernikahan Mifta & Endarta.">
+<meta property="og:image" content="https://endartaprayoga.github.io/undangan-endarta-mifta/assets/welcome.jpg">
+
+<!-- Meta Tag Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Wedding Of Mifta & Endarta">
+<meta name="twitter:description" content="Kami mengundang Anda untuk hadir dan memberikan doa restu pada pernikahan Mifta & Endarta.">
+<meta name="twitter:image" content="https://endartaprayoga.github.io/undangan-endarta-mifta/assets/welcome.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Amiri:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -106,8 +122,8 @@ h3{font-size:31px;margin:10px 0}
   margin: 0 auto 12px;
   border-radius: 50% 50% 48% 48% / 44% 44% 56% 56%;
   padding: 8px;
-  background: #ffffff; /* Mengubah warna gradasi hijau/cokelat menjadi putih */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Bayangan lembut dibelakang frame */
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .couple-thumb img {
@@ -132,14 +148,14 @@ h3{font-size:31px;margin:10px 0}
   width: min(280px, 75vw);
   margin: 0 auto 20px;
   padding: 8px;
-  background: #ffffff; /* Mengubah warna gradasi hijau/cokelat menjadi putih */
+  background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Bayangan lembut dibelakang frame */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .welcome-thumb-inline img {
   width: 100%;
-  height: auto; /* Mempertahankan rasio/bentuk asli foto agar tidak terpotong */
+  height: auto;
   display: block;
   border-radius: 12px;
   object-fit: contain;
@@ -241,7 +257,7 @@ h3{font-size:31px;margin:10px 0}
 
   <!-- Ayat Al-Qur'an -->
   <div class="quran reveal delay3">
-   <div class="arabic">يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍۢ وَٰحِدَةٍۢ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًۭا كَثِيرًۭا وَنِسَآءًۭ ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًۭا</div>
+   <div class="arabic">يَـٰٓأَيُّهَا ٱLNَّاسُ ٱTَّقُوا۟ رَبَّكُمُ ٱLَّذِى خَلَقَكُم مِّن نَّفْسٍۢ وَٰحِدَةٍۢ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًۭا كَثِيرًۭا وَنِسَآءًۭ ۚ وَٱTَّقُوا۟ ٱLَّهَ ٱLَّذِى تَسَآءَلُونَ بِهِۦ وَٱLْأَرْحَامَ ۚ إِنَّ ٱLَّهَ كَانَ عَلَيْكُمْ رَقِيبًۭا</div>
    <div class="translation">“Wahai manusia! Bertakwalah kepada Tuhanmu yang telah menciptakan kamu dari diri yang satu (Adam), dan Allah menciptakan pasangannya (Hawa) dari dirinya; dan dari keduanya Allah mengembangbiakkan laki-laki dan perempuan yang banyak...”</div>
    <div class="reference">QS. AN-NISA' : 1</div>
   </div>
@@ -379,9 +395,6 @@ document.getElementById('openBtn').addEventListener('click',()=>{
   music.play().catch(()=>{});
 });
 
-// Coba mulai musik segera saat halaman dibuka. Browser dapat memblokir
-// autoplay audio bersuara; jika itu terjadi, musik akan mulai setelah
-// pengguna menekan tombol 'Buka Undangan' atau tombol musik.
 window.addEventListener('load',()=>{
   music.play().then(()=>{
     musicBtn.textContent='♫';
