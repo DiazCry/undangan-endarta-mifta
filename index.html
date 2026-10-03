@@ -84,6 +84,49 @@ h3{font-size:31px;margin:10px 0}
 .slide.visible .reveal{opacity:1;transform:scale(1) translateY(0)}
 .slide.visible .delay1{transition-delay:.12s}.slide.visible .delay2{transition-delay:.24s}.slide.visible .delay3{transition-delay:.36s}
 
+/* Layout Dua Mempelai */
+.couples-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.couple-item {
+  flex: 1;
+  min-width: 240px;
+  max-width: 320px;
+}
+
+.couple-thumb {
+  width: min(220px, 50vw);
+  aspect-ratio: 1 / 1.25;
+  margin: 0 auto 15px;
+  border-radius: 50% 50% 48% 48% / 44% 44% 56% 56%;
+  padding: 6px;
+  background: linear-gradient(135deg, var(--gold), #fff, var(--emerald));
+  box-shadow: 0 15px 40px #0f6b5220;
+}
+
+.couple-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+.couple-divider {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color: var(--gold);
+  align-self: center;
+  margin: 10px 0;
+}
+
 @media(max-width:700px){
   .slide{padding:10px 20px}
   .slide::before{inset:10px}.slide::after{inset:18px}
@@ -161,8 +204,8 @@ h3{font-size:31px;margin:10px 0}
                             Endarta
   </h2>
   <div class="parents reveal delay3" style="margin-top: 40px;">
-   <p style="font-size: 20px;"><b>Miftachul Nurrosidah</b><br>Putri dari Bpk. Supriadi &amp; Ibu Susiana</p>
-   <p style="font-size: 20px;"><b>Endarta Prayoga</b><br>Putra dari Bpk. Iswahyudi &amp; Ibu Khusnul Hofiah</p>
+   <p style="font-size: 20px;"><b>Miftachul Nurrosidah</b><br>Putri pertama dari Bpk. Supriadi &amp; Ibu Susiana</p>
+   <p style="font-size: 20px;"><b>Endarta Prayoga</b><br>Putra kedua dari Bpk. Iswahyudi &amp; Ibu Khusnul Hofiah</p>
   </div>
  </div>
 </section>
