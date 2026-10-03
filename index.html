@@ -129,21 +129,20 @@ h3{font-size:31px;margin:10px 0}
 
 /* Styling Foto Sambutan Dalam Section */
 .welcome-thumb-inline {
-  width: min(150px, 40vw);
-  aspect-ratio: 1 / 1;
-  margin: 0 auto 12px;
-  border-radius: 50%;
-  padding: 4px;
+  width: min(280px, 75vw); /* Ukuran lebih besar di HP maupun Desktop */
+  margin: 0 auto 15px;
+  padding: 6px;
   background: linear-gradient(135deg, var(--gold), #fff, var(--emerald));
-  box-shadow: 0 10px 25px #0f6b5220;
+  border-radius: 16px; /* Sudut melengkung halus, tidak memotong foto jadi bulat */
+  box-shadow: 0 12px 30px #0f6b5220;
 }
 
 .welcome-thumb-inline img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  height: auto; /* Mempertahankan rasio/bentuk asli foto agar tidak terpotong */
   display: block;
+  border-radius: 12px;
+  object-fit: contain;
 }
 
 .welcome-text {
@@ -210,21 +209,21 @@ h3{font-size:31px;margin:10px 0}
 
 <section class="slide" id="s2">
 <div class="content">
-  <!-- Foto Sambutan -->
+  <!-- Foto Sambutan Tampilan Asli & Lebih Besar -->
   <div class="welcome-thumb-inline reveal">
     <img src="assets/welcome.jpg" alt="Sambutan Mifta & Endarta">
   </div>
 
   <div class="kicker reveal delay1">Dengan memohon rahmat dan ridha Allah SWT</div>
-  <h2 class="reveal delay1" style="font-size: clamp(32px, 6vw, 48px); margin: 8px 0;">Sebuah Awal yang Kami Syukuri</h2>
+  <h2 class="reveal delay1" style="font-size: clamp(28px, 5.5vw, 42px); margin: 6px 0;">Sebuah Awal yang Kami Syukuri</h2>
   
   <!-- Kata Sambutan -->
-  <p class="muted welcome-text reveal delay2">
+  <p class="muted welcome-text reveal delay2" style="font-size: 12px; margin: 8px auto 14px;">
     Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kami.
   </p>
 
   <!-- Ornamen Pemisah -->
-  <div class="ornament reveal delay2" style="height: 20px; margin-bottom: 10px;"><span></span></div>
+  <div class="ornament reveal delay2" style="height: 16px; margin-bottom: 8px;"><span></span></div>
 
   <!-- Ayat Al-Qur'an -->
   <div class="quran reveal delay3">
